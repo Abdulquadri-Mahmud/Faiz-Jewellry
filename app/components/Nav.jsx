@@ -7,8 +7,8 @@ export default function Nav() {
         <div className="logo">
             <h1 className='text-3xl'>Faiz-Jewellry</h1>
         </div>
-        <nav className='bg-white/20 p-2'>
-            <Link href='/'>Home</Link>
+        <nav className='bg-white/20 p-2 rounded-md'>
+            <Link href='/' className='active'>Home</Link>
             <Link href='/'>About</Link>
             <Link href='/'>Jewellry</Link>
             <Link href='/'>Contact Us</Link>
