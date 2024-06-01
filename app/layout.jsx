@@ -1,6 +1,8 @@
 import Header from './components/Header'
 import './globals.css'
-import { Roboto_Serif } from 'next/font/google'
+import { Roboto_Serif } from 'next/font/google';
+
+import { Providers } from './Provider';
 
 const roboto_serif = Roboto_Serif({ subsets: ['latin'] })
 
@@ -14,7 +16,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={roboto_serif.className}>
         <Header/>
-        {children}
+        <Providers>{children}</Providers>
       </body>
     </html>
   )

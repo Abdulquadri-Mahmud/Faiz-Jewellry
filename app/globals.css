@@ -5,12 +5,14 @@
 body{
     background: #ebf0fa;
 }
+header{
+    @apply bg-black
+}
 .hero{
     background-blend-mode: multiply;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: right;
-    background-blend-mode: multiply;
+    background-position: center;
     @apply bg-slate-400
 }
 
@@ -56,4 +58,20 @@ nav a.active::before{
     right: 13rem;
     top: 1.2rem;
     /* @apply bg-white */
+}
+
+.sidenav a{
+    display: block;
+    @apply py-3
+      pl-10 font-medium duration-200
+}
+
+section{
+    padding: 5rem 1rem;
+}
+section h1{
+    @apply text-3xl text-center md:text-5xl font-semibold text-black
+}
+section p{
+    @apply pt-5 text-center font-semibold text-black
 }
